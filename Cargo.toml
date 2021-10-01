@@ -1,0 +1,17 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+authors = ["{{authors}}"]
+edition = "2018"
+description = "{{project-name}}"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+trinci-sdk = { git = "https://github.com/affidaty-blockchain/trinci-sdk-rust" }
+serde = { version = "1.0.126", features = ["derive"] }
+serde_derive = "1.0.126"
+
+[dev-dependencies]
+hex = "0.4.3"
