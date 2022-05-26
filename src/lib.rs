@@ -43,7 +43,7 @@ fn before_transfer(ctx: AppContext, _args: TransferArgs) -> WasmResult<bool> {
         return Err(WasmError::new("not initialized"));
     };
 
-    Ok(true)
+    Ok(false)
 }
 
 /// Method called from an advanced asset after the performing of a transfer
