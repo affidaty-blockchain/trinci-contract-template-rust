@@ -180,6 +180,6 @@ mod tests {
 
         let res = not_wasm::call_wrap(before_transfer, ctx, args).unwrap();
 
-        assert_eq!(res, true);
+        assert_eq!(res, false);
     }
 }
