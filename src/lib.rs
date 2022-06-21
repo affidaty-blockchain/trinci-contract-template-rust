@@ -120,6 +120,7 @@ mod tests {
             from: "account_1",
             to: "account_2",
             units: 100,
+            data: None,
         };
 
         let err = not_wasm::call_wrap(after_transfer, ctx, args).unwrap_err();
@@ -138,6 +139,7 @@ mod tests {
             from: "account_1",
             to: "account_2",
             units: 100,
+            data: None,
         };
 
         let res = not_wasm::call_wrap(after_transfer, ctx, args).unwrap();
@@ -154,6 +156,7 @@ mod tests {
             from: "account_1",
             to: "account_2",
             units: 100,
+            data: None,
         };
 
         let err = not_wasm::call_wrap(before_transfer, ctx, args).unwrap_err();
@@ -172,6 +175,7 @@ mod tests {
             from: "account_1",
             to: "account_2",
             units: 100,
+            data: None,
         };
 
         let res = not_wasm::call_wrap(before_transfer, ctx, args).unwrap();
